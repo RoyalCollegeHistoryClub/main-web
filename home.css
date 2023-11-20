@@ -232,6 +232,7 @@ body{
 }
 .member img{
     width: 80%;
+    height: 60%;
     margin-top: 7%;
 }
 .member p span{
@@ -275,4 +276,6 @@ body{
 }
 .contact-number{
     color: rgb(120, 255, 255);
+    font-size: 1rem;
+    font-style: none;
 }
