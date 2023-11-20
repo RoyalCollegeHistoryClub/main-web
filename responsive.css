@@ -1,0 +1,146 @@
+@media(max-width: 1200px){
+    .logoBox{
+        margin-top: 15%;
+    }
+    .BMR1{
+        display: block;
+    }
+    .BMember{
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .BMember{
+        height: 250px;
+        background: #242424;
+        width: 27%;
+        border-radius: 15px;
+        justify-content: space-between;
+    }
+    .imbox img{
+        margin-top: 10%;
+        width: 50%;
+    }
+    .BMText{
+        margin-top: 10%;
+        color: #fff;
+        font-size: 17px;
+    }
+}
+@media (max-width:400px) {
+    .menu-btn h3{
+        font-size: 20px;
+    }
+    .title{
+        font-size: 60px;
+    }
+    .BMember{
+        height: 250px;
+        background: #242424;
+        width: 100%;
+        border-radius: 15px;
+        justify-content: space-between;
+    }
+    .imbox img{
+        margin-top: 10%;
+        width: 50%;
+    }
+
+    .lgbox{
+        display: block;
+    }
+    .gallary{
+        width: 100%;
+    }
+    .navigation-auto{
+        width: 250px;
+    }
+    .navigation-manual{
+        width: 250px;
+    }
+    .manual-btn:not(:last-child){
+        margin-right: 20px;
+    }
+    .manual-btn:last-child{
+        margin-right: -80px;
+    }
+    .navigation-auto div:last-child{
+        margin-right: -80px;
+    }
+    .navigation-auto div:not(:last-child){
+        margin-right: 20px;
+    }
+    .parth2{
+        display: block;
+    }
+    .fAbox{
+        width: 90%;
+    }
+    .sAbox{
+        width: 95%;
+        margin-top: 0%;
+    }
+    .BordMembers{
+        display: block;
+    }
+    .MemberListF{
+        display: block;
+    }
+    .MemberListS{
+        display: block;
+    }
+    .member{
+        width: 80%;
+        margin-top: 10px;
+    }
+    .testimonial .image{
+        width: 150px;
+        height: 150px;
+    }
+}
+@media (max-width: 868px){
+    .rcico{
+        margin-top: 10%;
+    }
+    .rc{
+        width: 20%;
+    }
+    .hc{
+        width: 25%;
+    }
+    .clubLogo{
+        width: 95%;
+    }
+    .AboutB{
+        display: block;
+    }
+    .Aboutbox{
+        width: 80%;
+        margin-bottom: 5%;
+    }
+    .Aboutbox h1{
+        text-align: center;
+    }
+    .BMR1{
+        display: block;
+    }
+    .BMember{
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .BMember{
+        height: 250px;
+        background: #242424;
+        width: 50%;
+        border-radius: 15px;
+        justify-content: space-between;
+    }
+    .imbox img{
+        margin-top: 5%;
+        width: 50%;
+    }
+    .projectCal{
+        width: 100%;
+    }
+}

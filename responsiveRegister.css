@@ -1,0 +1,40 @@
+@media(max-width:400px){
+    .menu-btn h3{
+        font-size: 20px;
+    }
+    .title{
+        font-size: 60px;
+    }
+    .BMember{
+        height: 250px;
+        background: #242424;
+        width: 100%;
+        border-radius: 15px;
+        justify-content: space-between;
+    }
+    .imbox img{
+        margin-top: 10%;
+        width: 50%;
+    }
+    .rcico{
+        margin-top: 10%;
+    }
+    .rc{
+        width: 20%;
+    }
+    .hc{
+        width: 25%;
+    }
+    .clubLogo{
+        width: 95%;
+    }
+    .spasei{
+        display: block;
+    }
+    form{
+        width: 340px;
+    }
+    .icon i{
+        margin-left: 30px;
+    }
+}

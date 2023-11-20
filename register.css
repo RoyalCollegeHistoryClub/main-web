@@ -1,0 +1,116 @@
+body{
+    background: url("banner1.png") no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.rc{
+    width: 8%;
+}
+.hc{
+    width: 10%;
+}
+.rcicon img{
+    margin-top: 5%;
+    transition: all 0.7s;
+}
+
+
+.form{
+    width: 100%;
+}
+.titlef {
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+}
+form {
+    width: 500px;
+    padding: 15px 40px 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #111111d2;
+    margin: 4% auto;
+}
+label {
+    display: block;
+    margin-bottom: 5px
+}
+label i {
+    color: #999;
+    font-size: 80%;
+}
+input, select {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-color: #4d4d4d4a;
+}
+select option{
+    background-color: #111111;
+}
+.box {
+    padding-bottom: 10px;
+}
+.form-inline {
+    border: 1px solid #ccc;
+    padding: 8px 10px 4px;
+    border-radius: 2px;
+}
+.form-inline label, .form-inline input {
+    display: inline-block;
+    width: auto;
+    padding-right: 15px;
+}
+.error {
+    color: red;
+    font-size: 90%;
+}
+input[type=text]{
+        outline: none;
+}
+
+input[type="submit"] {
+    font-size: 110%;
+    font-weight: 300;
+    background: #616161;
+    border-color: #464444;
+    box-shadow: 0 3px 0 #424242;
+    color: rgb(8, 8, 8);
+    margin-top: 10px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background: #111111;
+    border-color: #919191;
+    color: #fff;
+}
+
+.input-1{
+    background-image: url(../images/check.png);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    border:1px solid #01cc40;
+}
+.input-2{
+    background-image: url(../images/cancel.png);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    border:1px solid red;
+}
+.input-3{
+    border:1px solid #01cc40!important;
+}
+select{
+    outline: none!important;
+}
+.input-4{
+    border:1px solid red;
+}
+.spasei{
+    display: none;
+}
