@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="headfoot.css">
+  <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+  <title>Echoes Of antiquity</title>
+  <?php require "connection.html" ?>
+</head>
+
+<body>
+
+  <nav class="home-nav" id="home-nav">
+    <img src="assets/logo.jpg" alt="logo" onclick="window.location = 'index.html'">
+    <p class="nav-web-topic" onclick="window.location = 'index.html'">Echoes Of Antiquity</p>
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#tree_of_ages">Tree Of Ages</a></li>
+      <li><a href="index.html#link_to_quizzes">Quizzes</a></li>
+      <li><a href="">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <section id="content-inside-articles" class="content-inside-articles">
+    <div class="main-article-content">
+      <p>Kandy</p>
+      <img src="assets/article_images/Vijayabahu_1.jpg" alt="Vijayabahu_1">
+    </div>
+
+    <div class="inframe-article_content">
+      <?php
+      $rs = Database::search("SELECT * FROM `articles` WHERE `era_id` = '9'");
+      for ($x = 0; $x < $rs->num_rows; $x++) {
+        $d = $rs->fetch_assoc();
+      ?>
+        <div id="<?php echo ($d["link_path"]); ?>">
+          <h1><?php echo ($d["name"]); ?></h1>
+          <div><img src="assets\article_images\<?php echo ($d["img_path"]) ?>" alt="<?php echo ($d["img_alt"]) ?>" /></div>
+          <span><?php echo ($d["description"]); ?></span>
+        </div>
+      <?php
+      }
+      ?>
+    </div>
+  </section>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", function() {
+      function autoload() {
+        var article_preloader = document.getElementById("article_preloader");
+        article_preloader.style.transition = "transform 2s ease";
+        article_preloader.style.transform = "translateY(-100%)";
+      }
+      window.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("article_preloader").style.display = "none";
+      });
+      autoload();
+    });
+  </script>
+
+  <script src="articles.js" defer></script>
+</body>
+
+</html>

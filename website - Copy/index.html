@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="headfoot.css">
+  <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+  <title>Echoes Of antiquity</title>
+  <?php require "connection.html" ?>
+</head>
+
+<body id="scroll-smooth">
+
+  <nav class="home-nav" id="home-nav">
+    <img src="assets/logo.jpg" alt="logo" onclick="window.location = 'index.html'">
+    <p class="nav-web-topic" onclick="window.location = 'index.html'">Echoes Of Antiquity</p>
+    <ul class="nav-list">
+      <li><a href="#">Home</a></li>
+      <li><a href="#link_to_tree_of_ages">Tree Of Ages</a></li>
+      <li><a href="#link_to_quizzes">Quizzes</a></li>
+      <li><a href="#link_to_contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="main-page-content" id="main-page-content">
+    <div class="landing-page" id="landing-page">
+      <div class="landing-div">
+        <video playsinline controls disablePictureInPicture class="landing-video" id="landing-video" poster="assets/lazyload_landing_video.png">
+          <source src="assets/landing_video.mp4" type="video/mp4" />
+        </video>
+        <p id="landing-text">Welcome to Echoes of Antiquity, the great fountain of knowledge about Sri Lanka's past!</p>
+      </div>
+    </div>
+    <div class="secondary-content" id="after-landing-page-div">
+      <div class="welcome-first">
+        <img src="assets/phenakistoscope.svg" alt="phenakistoscope" class="rotating-wheel">
+        <p>Welcome to 'Echoes of Antiquity,' an enchanting site curated by RCHC. Journey through Sri Lanka's captivating
+          history, uncover the mysteries of ancient wonders, and embrace the rich tapestry of cultural heritage. Let the
+          echoes of the past guide you on this enlightening exploration of the island's timeless treasures.</p>
+      </div>
+    </div>
+    <section class="tree-content" id="link_to_tree_of_ages">
+      <div class="backbone_div">
+        <div class="all-content-head-topic-main-div">
+          <h1 class="all-content-head-topic">TREE OF AGES</h1>
+          <hr />
+          <hr />
+        </div>
+        <div class="tree_structure_sub_topic">
+          <div>
+            <span></span>
+            <button onclick="tree_structure_topic_click(1);">
+              <p>Anuradhapura</p>
+            </button>
+          </div>
+        </div>
+        <div class="tree_structure_tree" id="tree_structure_control_tree_id1">
+          <img src="assets/article_images/dutugemunu.jpg" alt="landing-dutugemunu" class="tree_structure_background" style="width: 200%;">
+
+          <div class="tree_structure_active">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/vijaya.jpg" alt="vijaya">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/anuradhapura.html#vijaya', '_blank')">
+                  <p>Vijaya</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/pandukabhaya.jpg" alt="pandukabhaya">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/anuradhapura.html#pandukabhaya', '_blank')">
+                  <p>Pandukabhaya</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tree_structure_line" id="tree_structure_line">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/dutugemunu.jpg" alt="dutugemunu">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/anuradhapura.html#dutugemunu', '_blank')">
+                  <p>Dutugemunu</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/valagamba.jpg" alt="valagamba">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/anuradhapura.html#valagamba', '_blank')">
+                  <p>Valagamba</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="assets/article_images/pandukabhaya.jpg" alt="landing-dutugemunu" class="tree_structure_background" style="width: 200%; top: 2000px;">
+
+          <div class="tree_structure_line" id="tree_structure_line">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/kutakannabhaya.jpg" alt="kutakannabhaya">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/anuradhapura.html#kutakannabhaya', '_blank')">
+                  <p>Kutakannabhaya</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/bhatikabhaya.jpg" alt="Bhatikabhaya">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/anuradhapura.html#bhatikabhaya', '_blank')">
+                  <p>Bhatikabhaya</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tree_structure_line" id="tree_structure_line">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/vasabha.jpg" alt="Vasabha">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/anuradhapura.html#vasabha', '_blank')">
+                  <p>Vasabha</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/gajabahu1.jpg" alt="gajabahu1">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/anuradhapura.html#gajabahu1', '_blank')">
+                  <p>Gajabahu I</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tree_structure_line" id="tree_structure_line">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/mahasen.jpg" alt="Mahasen">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/anuradhapura.html#mahasen', '_blank')">
+                  <p>Mahasen</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/dhatusena.jpg" alt="Dhatusena">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/anuradhapura.html#dhatusena', '_blank')">
+                  <p>Dhatusena</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tree_structure_line" id="tree_structure_line">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/kasyapa.jpg" alt="Kasyapa">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/anuradhapura.html#kasyapa', '_blank')">
+                  <p>Kasyapa</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/manavamma.jpg" alt="manavamma">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/anuradhapura.html#manavamma', '_blank')">
+                  <p>Manavamma</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tree_structure_line" id="tree_structure_line">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/agbo6.jpg" alt="agbo6">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/anuradhapura.html#agbo6', '_blank')">
+                  <p>Agbo VI</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/sena1.jpg" alt="sena1">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/anuradhapura.html#sena1', '_blank')">
+                  <p>Sena I</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tree_structure_line" id="tree_structure_line">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/sena2.jpg" alt="sena2">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/anuradhapura.html#sena2', '_blank')">
+                  <p>Sena II</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/kasyapa4.jpg" alt="kashyapa4">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/anuradhapura.html#kasyapa4', '_blank')">
+                  <p>Kasyapa IV</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tree_structure_line" id="tree_structure_line">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/udaya3.jpg" alt="udaya3">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/anuradhapura.html#udaya3', '_blank')">
+                  <p>Udaya III</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/udaya4.jpg" alt="vijaya">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/anuradhapura.html#udaya4', '_blank')">
+                  <p>Udaya IV</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tree_structure_line" id="tree_structure_line">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/mihindu4.jpg" alt="vijaya">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/anuradhapura.html#mihindu4', '_blank')">
+                  <p>Mihindu IV</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/mihindu5.jpg" alt="vijaya">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/anuradhapura.html#mihindu5', '_blank')">
+                  <p>Mihindu V</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tree_structure_sub_topic">
+          <div>
+            <span></span>
+            <button onclick="tree_structure_topic_click(2);">
+              <p>Polonnaruwa</p>
+            </button>
+          </div>
+        </div>
+        <div class="tree_structure_tree" id="tree_structure_control_tree_id2">
+          <img src="assets/article_images/Parakramabahu1.jpg" alt="landing-Parakramabahu1" class="tree_structure_background" style="width: 200%;">
+
+          <div class="tree_structure_active">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/vijayabahu1.jpg" alt="vijayabahu1">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/polonnaruwa.html#vijayabahu1', '_blank')">
+                  <p>Vijayabahu I</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/Parakramabahu1.jpg" alt="Parakramabahu1">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/polonnaruwa.html#parakramabahu1', '_blank')">
+                  <p>Parakramabahu I</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tree_structure_line" id="tree_structure_line">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/Nishshankamalla.jpg" alt="Nishshankamalla">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/polonnaruwa.html#nishshankamalla', '_blank')">
+                  <p>Nishshankamalla</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/kalingamagha.jpg" alt="kalingamagha">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/polonnaruwa.html#kalingamagha', '_blank')">
+                  <p>Kalinga Magha</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tree_structure_sub_topic">
+          <div>
+            <span></span>
+            <button onclick="tree_structure_topic_click(3);">
+              <p>Dambadeniya</p>
+            </button>
+          </div>
+        </div>
+        <div class="tree_structure_tree" id="tree_structure_control_tree_id3">
+          <img src="assets/article_images/vijayabahu3.jpg" alt="landing-vijayabahu3" class="tree_structure_background" style="width: 100%;">
+
+          <div class="tree_structure_active" style="border-radius: 20px; padding-bottom: 110px;">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/vijayabahu3.jpg" alt="vijayabahu3">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#vijayabahu3', '_blank')">
+                  <p>Vijayabahu III</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/parakramabahu2.jpg" alt="parakramabahu2">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#parakramabahu2', '_blank')">
+                  <p>Parakramabahu II</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tree_structure_sub_topic">
+          <div>
+            <span></span>
+            <button onclick="tree_structure_topic_click(4);">
+              <p>Yapahuwa</p>
+            </button>
+          </div>
+        </div>
+        <div class="tree_structure_tree" id="tree_structure_control_tree_id4">
+          <img src="assets/article_images/parakramabahu3.jpg" alt="landing-parakramabahu3" class="tree_structure_background" style="width: 100%;">
+
+          <div class="tree_structure_active" style="border-radius: 20px; padding-bottom: 110px;">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/buvanekabahu1.jpg" alt="buvanekabahu1">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#buvanekabahu1', '_blank')">
+                  <p>Buvanekabahu I</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/parakramabahu3.jpg" alt="parakramabahu3">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#parakramabahu3', '_blank')">
+                  <p>Parakramabahu III</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tree_structure_sub_topic">
+          <div>
+            <span></span>
+            <button onclick="tree_structure_topic_click(5);">
+              <p>Kurunegala</p>
+            </button>
+          </div>
+        </div>
+        <div class="tree_structure_tree" id="tree_structure_control_tree_id5">
+          <img src="assets/article_images/parakramabahu4.jpg" alt="landing-parakramabahu4" class="tree_structure_background" style="width: 100%;">
+
+          <div class="tree_structure_active">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/buvanekabahu2.jpg" alt="buvanekabahu2">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#buvanekabahu2', '_blank')">
+                  <p>Buvanekabahu II</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/parakramabahu4.jpg" alt="parakramabahu4">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#parakramabahu4', '_blank')">
+                  <p>Parakramabahu IV</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tree_structure_line">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/buvanekabahu3.jpg" alt="buvanekabahu3">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#buvanekabahu3', '_blank')">
+                  <p>Buvanekabahu III</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/vijayabahu5.jpg" alt="vijayabahu5">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#vijayabahu5', '_blank')">
+                  <p>Vijayabahu V</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tree_structure_sub_topic">
+          <div>
+            <span></span>
+            <button onclick="tree_structure_topic_click(6);">
+              <p>Gampola</p>
+            </button>
+          </div>
+        </div>
+        <div class="tree_structure_tree" id="tree_structure_control_tree_id6">
+          <img src="assets/article_images/senalankadhikarafamily.jpg" alt="landing-senalankadhikarafamily" class="tree_structure_background" style="width: 210%;">
+          <div class="tree_structure_active">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/buvanekabahu4.jpg" alt="buvanekabahu4">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#buvanekabahu4', '_blank')">
+                  <p>Buvanekabahu IV</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/parakramabahu5.jpg" alt="parakramabahu5">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#parakramabahu5', '_blank')">
+                  <p>Parakramabahu V</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tree_structure_line">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/senalankadhikarafamily.jpg" alt="senalankadhikarafamily">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#senalankadhikarafamily', '_blank')">
+                  <p>Senalankadhikara Family</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/vickramabahu3.jpg" alt="vikramabahu3">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#vikramabahu3', '_blank')">
+                  <p>Vikramabahu III</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tree_structure_line" id="tree_structure_line"></div>
+
+          <div class="tree_structure_line">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/nishshankaalakeshwara.jpg" alt="nishshankaalakeshwara">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#nishshankaalakaeshwara', '_blank')">
+                  <p>Nishshanka Alakeshwara</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/viraalakeshwara.jpg" alt="viraalakeshwara">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#viraalakaeshwara', '_blank')">
+                  <p>Vira Alakeshwara</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tree_structure_sub_topic">
+          <div>
+            <span></span>
+            <button onclick="tree_structure_topic_click(7);">
+              <p>Kotte</p>
+            </button>
+          </div>
+        </div>
+        <div class="tree_structure_tree" id="tree_structure_control_tree_id7">
+          <img src="assets/article_images/dharmaparakramabahu9.jpg" alt="landing-dharmaparakramabahu9" class="tree_structure_background" style="width: 200%;">
+
+          <div class="tree_structure_active">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/parakramabahu4.jpg" alt="parakramabahu4">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#parakramabahu6', '_blank')">
+                  <p>Parakramabahu VI</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/Jayabahu.jpg" alt="Jayabahu">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#jayabahu', '_blank')">
+                  <p>Jayabahu</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tree_structure_line">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/buvanekabahu4.jpg" alt="buvanekabahu4">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#buvanekabahu6', '_blank')">
+                  <p>Buvanekabahu VI</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/pandithaparakramabahu7.jpg" alt="pandithaparakramabahu7">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#pandithaparakramabahu7', '_blank')">
+                  <p>Panditha Parakramabahu VII</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tree_structure_line">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/veeraparakramabahu8.jpg" alt="veeraparakramabahu8">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#veeraparakramabahu8', '_blank')">
+                  <p>Veera Parakramabahu VIII</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/dharmaparakramabahu9.jpg" alt="dharmaparakramabahu9">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#dharmaparakrambahu9', '_blank')">
+                  <p>Dharma Parakrambahu IX</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tree_structure_line">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/vijayabahu6.jpg" alt="vijayabahu6">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#vijayabahu6', '_blank')">
+                  <p>Vijayabahu VI</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/vijayabakollaya.jpg" alt="vijayabakollaya">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#vijayabakollaya', '_blank')">
+                  <p>Vijayaba Kollaya</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tree_structure_line">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/buvanekabahu7.jpg" alt="buvanekabahu7">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#buvanekabahu7', '_blank')">
+                  <p>Buvanekabahu VII</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/dharmapala.jpg" alt="dharmapala">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#dharmapala', '_blank')">
+                  <p>Dharmapala</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tree_structure_sub_topic">
+          <div>
+            <span></span>
+            <button onclick="tree_structure_topic_click(8);">
+              <p>Seethawaka</p>
+            </button>
+          </div>
+        </div>
+        <div class="tree_structure_tree" id="tree_structure_control_tree_id8">
+          <img src="assets/article_images/arittakeevendu.jpg" alt="landing-arittakeevendu" class="tree_structure_background" style="width: 200%;">
+
+          <div class="tree_structure_active">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/mayadunne.jpg" alt="mayadunne">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#mayadunne', '_blank')">
+                  <p>Mayadunne</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/rajasinghe1.jpg" alt="rajasinghe1">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#rajasinghe1', '_blank')">
+                  <p>Rajasinghe I</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tree_structure_line">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/arittakeevendu.jpg" alt="arittakeevendu">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/eras.html#arittakeevendu', '_blank')">
+                  <p>Aritta Keevendu</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tree_structure_sub_topic">
+          <div>
+            <span></span>
+            <button onclick="tree_structure_topic_click(9);">
+              <p>Kandy</p>
+            </button>
+          </div>
+        </div>
+        <div class="tree_structure_tree" id="tree_structure_control_tree_id9">
+          <img src="assets/article_images/senarath.jpg" alt="landing-senarath" class="tree_structure_background" style="width: 150%;">
+
+          <div class="tree_structure_active">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/wimaladharmasooriya1.jpg" alt="wimaladharmasooriya1">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/kandy.html#wimaladharmasooriya1', '_blank')">
+                  <p>Wimaladharmasooriya I</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/senarath.jpg" alt="senarath">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/kandy.html#senarath', '_blank')">
+                  <p>Senarath</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tree_structure_line">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/rajasinghe2.jpg" alt="rajasinghe2">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/kandy.html#rajasinghe2', '_blank')">
+                  <p>Rajasinghe II</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/wimaladharmasooriya2.jpg" alt="wimaladharmasooriya2">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/kandy.html#wimaladharmasooriya2', '_blank')">
+                  <p>Wimaladharmasooriya II</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tree_structure_line">
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="left: 150px;">
+                <img src="assets/article_images/sriveeraparakramanarendrasinghe.jpg" alt="sriveeraparakramanarendrasinghe">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/kandy.html#sriweeraparakkramanarendrasinghe', '_blank')">
+                  <p>Sri Weera Parakrama Narendrasinghe</p>
+                </div>
+              </div>
+            </div>
+            <div class="tree_structure_branch">
+              <div class="tree_structure_data" style="right: 150px;">
+                <img src="assets/article_images/keerthisrirajasinghe.jpg" alt="keerthisrirajasinghe">
+                <div class="tree_structure_title" onclick="window.open('http://localhost/echoes-of-antiquity/website/kandy.html#keerthisrirajasinghe', '_blank')">
+                  <p>Keerthi Sri Rajasinghe</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="quiz-content" id="link_to_quizzes">
+      <div class="all-content-head-topic-main-div">
+        <h1 class="all-content-head-topic">Quizzes</h1>
+        <hr style="width: 250px;" />
+        <hr style="width: 250px;" />
+      </div>
+      <div class="quiz-content-div">
+        <p class="quiz-content-p-main-topic">ECHOMIND TOURNEMENT</p>
+        <p class="quiz-content-p-secondary-topic">Test your knowledge against your fellow Echominds and win fabulous prizes in our great Echomind Tournament!</p>
+        <div class="quiz-content-div_inside">
+          <ul class="quiz_content_quiz_details_ul">Quizzes Available :
+            <?php
+            $rs = Database::search("SELECT * FROM `quizzes` ORDER BY `Starting_Date`");
+            $n = $rs->num_rows;
+            for ($i = 0; $i < $n; $i++) {
+              $d = $rs->fetch_assoc();
+            ?>
+              <li><a href="quiz.html"><?php echo ($d["Name"]); ?></a>
+                <ul>
+                  <li>Start At: <p><?php echo ($d["Starting_Date"]); ?></p>
+                  </li>
+                  <li>Finish At: <p><?php echo ($d["Ending_Date"]); ?></p>
+                  </li>
+                  <li>Number Of Questions: <p><?php echo ($d["num_of_questions"]) ?></p>
+                  </li>
+                </ul>
+              </li>
+            <?php
+            }
+            ?>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="about-content" id="link_to_contact">
+      <div class="all-content-head-topic-main-div">
+        <h1 class="all-content-head-topic">Contact Us</h1>
+        <hr style="width: 250px;" />
+        <hr style="width: 250px;" />
+      </div>
+      <div>
+        <div>
+          <h1>Top Board</h1>
+          <p>Chairman &#45; Viren Meegahawatte</p>
+          <p>Secretary &#45; Kavinu Vehan</p>
+          <p>Treasurer &#45; Sarith Abeysirigunawardana</p>
+          <p>Teacher in charge &#45; Mr. Palitha Abeywardhena</p>
+        </div>
+        <div>
+          <h1>Contact Information</h1>
+          <span>
+            <p>Student Coordinator</p>
+            <p>Minindu Mandara</p>
+            <a href="tel:0702357990">0702357990</a>
+          </span>
+          <span>
+            <p>Email Address</p>
+            <a href="mailto:royalcollegehistoryclub@gmail.com">royalcollegehistoryclub@gmail.com</a>
+          </span>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <ul>
+      <li>
+        <h1>Content</h1>
+        <a href="index.html">Home</a>
+        <a href="index.html#link_to_tree_of_ages">Tree Of Ages</a>  
+        <a href="index.html#link_to_quizzes">Quizzes</a>  
+        <a href="index.html#link_to_contact">Contact Us</a> 
+      </li>
+      <li>
+        <h1>Address</h1>
+        <p><img src="assets/gps.png" alt="map">Rajakeeya Mawatha, Colombo - 00700</p>
+        <a href="tel:+9412345678"><img src="assets/phone.png" alt="call">+9412345678</a>
+        <a href="mailto:royalcollegehistoryclub@gmail.com"><img src="assets/email.png" alt="call">royalcollegehistoryclub@gmail.com</a>
+      </li>
+      <li>
+        <h1>About Us</h1>
+        <p>Royal College History Club Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, molestias veritatis necessitatibus rem vel asperiores illum numquam ad magnam expedita placeat voluptate obcaecati ut fugiat dolorem ipsum consectetur accusamus. Minima!</p>
+        <div>
+        <a href="https://www.facebook.com/RCHistoryClub"><img src="assets/facebook.png" alt="facebook"></a>
+        <a href="https://twitter.com/RCHC_1930"><img src="assets/twitter.png" alt="youtube"></a>
+        <a href="https://www.instagram.com/rchistoryclub.official/"><img src="assets/instagram.png" alt="instagram"></a>
+        <a href="https://www.youtube.com/channel/UCvk3JajwFWOIZbtw6J6QS5g"><img src="assets/youtube.png" alt="youtube"></a>
+      </div>
+      </li>
+    </ul>
+    <p class="designer">Website was created by <a href="mailto:demithasenavirathna@gmail.com">Chithira Senavirathna</a></p>
+    <p class="copyright">&copy; 2022 Royal College History Club | All Rights Reserved</p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="headfoot.js" defer></script>
+</body>
+
+</html>
