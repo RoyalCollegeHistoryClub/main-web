@@ -36,7 +36,7 @@
     <div class="secondary-content" id="after-landing-page-div">
       <div class="welcome-first">
         <img src="assets/phenakistoscope.svg" alt="phenakistoscope" class="rotating-wheel">
-        <p>Welcome to 'Echoes of Antiquity,' an enchanting site curated by RCHC. Journey through Sri Lanka's captivating
+        <p>Welcome to 'Echoes of Antiquity,' an enchanting site curated by RCHC. Jou ey through Sri Lanka's captivating
           history, uncover the mysteries of ancient wonders, and embrace the rich tapestry of cultural heritage. Let the
           echoes of the past guide you on this enlightening exploration of the island's timeless treasures.</p>
       </div>
@@ -692,16 +692,11 @@
         <hr style="width: 250px;" />
       </div>
       <div class="quiz-content-div">
-        <p class="quiz-content-p-main-topic">ECHOMIND TOURNEMENT</p>
-        <p class="quiz-content-p-secondary-topic">Test your knowledge against your fellow Echominds and win fabulous prizes in our great Echomind Tournament!</p>
+        <p class="quiz-content-p-main-topic">ECHOMIND TOU EMENT</p>
+        <p class="quiz-content-p-secondary-topic">Test your knowledge against your fellow Echominds and win fabulous prizes in our great Echomind Tou ament!</p>
         <div class="quiz-content-div_inside">
           <ul class="quiz_content_quiz_details_ul">Quizzes Available :
-            <?php
-            $rs = Database::search("SELECT * FROM `quizzes` ORDER BY `Starting_Date`");
-            $n = $rs->num_rows;
-            for ($i = 0; $i < $n; $i++) {
-              $d = $rs->fetch_assoc();
-            ?>
+            Pending
               <li><a href="quiz.html"><?php echo ($d["Name"]); ?></a>
                 <ul>
                   <li>Start At: <p><?php echo ($d["Starting_Date"]); ?></p>
