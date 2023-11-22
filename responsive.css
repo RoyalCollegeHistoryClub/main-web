@@ -26,6 +26,15 @@
         color: #fff;
         font-size: 17px;
     }
+    .ecose{
+        width: 90%;
+    }
+    .ecose a{
+        font-size: 1rem;
+    }
+    .contactus_form{
+        width: 90%;
+    }
 }
 @media (max-width:400px) {
     .menu-btn h3{
@@ -97,6 +106,15 @@
         width: 150px;
         height: 150px;
     }
+    .ecose{
+        width: 90%;
+    }
+    .ecose a{
+        font-size: 1rem;
+    }
+    .contactus_form{
+        width: 90%;
+    }
 }
 @media (max-width: 868px){
     .rcico{
@@ -142,5 +160,14 @@
     }
     .projectCal{
         width: 100%;
+    }
+    .ecose{
+        width: 90%;
+    }
+    .ecose a{
+        font-size: 1rem;
+    }
+    .contactus_form{
+        width: 90%;
     }
 }
